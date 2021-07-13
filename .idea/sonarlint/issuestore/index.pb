@@ -17,19 +17,5 @@ Z
 *src/main/java/com/dafiti/utils/Driver.java,1\e\1ebcd45d067d0c863a2d5f77c32b64d30e0b504b
 U
 %src/main/java/com/dafiti/ui/Home.java,c\8\c87e89fc992edc8138206f851d52502d2f317f2e
-\
-,src/main/java/com/dafiti/ui/ResultsPage.java,8\4\84c661e1445022aa7783f3399c3ccf9062fcbe7e
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-_
-/src/main/java/com/dafiti/tasks/RegisterNew.java,f\7\f740ef2fafe3db7a7b90dcca76f36c15dca71d08
-w
-Gsrc/test/java/com/dafiti/stepdefinitions/AddProductStepdefinitions.java,7\4\74dbfc57127632f6ac76b3c4e2bae2b1d3aebe0e
-X
-(src/main/java/com/dafiti/tasks/GoTo.java,5\d\5d97f8827f491101f9c7bb4efe717cf0655ad7bf
-\
-,src/main/java/com/dafiti/ui/MaleSeccion.java,b\5\b5281e2580c8d16632021c1ad4d3800b86363d1d
-`
-0src/main/java/com/dafiti/interactions/Swipe.java,7\5\7540c2938ed88dc06badb46227123fa8d33bb3dc
-Y
-)src/main/java/com/dafiti/tasks/AddTo.java,c\b\cb064a0a4b97213f30c6fe7dd87b3324262e07bf
