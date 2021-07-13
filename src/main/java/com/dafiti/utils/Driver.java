@@ -9,6 +9,8 @@ import java.net.URL;
 
 public class Driver {
 
+    private Driver() {
+    }
 
     public static WebDriver dafiti(){
         DesiredCapabilities capabilities = new DesiredCapabilities();

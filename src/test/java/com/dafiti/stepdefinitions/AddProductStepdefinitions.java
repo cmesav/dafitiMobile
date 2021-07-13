@@ -1,7 +1,10 @@
 package com.dafiti.stepdefinitions;
 
-import com.dafiti.tasks.Prueba;
-import io.cucumber.java.en.Given;
+import com.dafiti.models.RegistrationData;
+import com.dafiti.tasks.AddTo;
+import com.dafiti.tasks.GoTo;
+import com.dafiti.tasks.RegisterNew;
+import com.dafiti.utils.ReturnRandom;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -9,19 +12,15 @@ import static net.serenitybdd.screenplay.actors.OnStage.*;
 
 public class AddProductStepdefinitions {
 
-    @Given("the client is in the app")
-    public void theClientIsInTheApp() {
-
+    @When("he creates an account with the data")
+    public void heCreatesAnAccountWithTheData(RegistrationData registrationData) {
+        theActorInTheSpotlight().attemptsTo(RegisterNew.account(registrationData));
+//        System.out.println(ReturnRandom.number());
     }
 
     @When("add a product to cart")
     public void addAProductToCart() {
-        theActorInTheSpotlight().attemptsTo(Prueba.pepe());
-    }
-
-    @When("he creates an account")
-    public void heCreatesAnAccount() {
-
+        theActorInTheSpotlight().attemptsTo(AddTo.cart());
     }
 
     @Then("he can see the product in his cart")

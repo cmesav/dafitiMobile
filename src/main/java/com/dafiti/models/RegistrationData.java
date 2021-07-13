@@ -1,5 +1,7 @@
 package com.dafiti.models;
 
+import com.dafiti.utils.ReturnRandom;
+
 public class RegistrationData {
 
     private final String email;
@@ -11,11 +13,11 @@ public class RegistrationData {
     private final String bithDate;
     private final String gender;
 
-    public RegistrationData(String email, String password, String idType, String id, String name, String lastName, String bithDate, String gender) {
-        this.email = email;
+    public RegistrationData(String password, String idType, String name, String lastName, String bithDate, String gender) {
+        this.email ="esmicorreo"+ ReturnRandom.number() +"@gmail.com";
         this.password = password;
         this.idType = idType;
-        this.id = id;
+        this.id = ReturnRandom.number();
         this.name = name;
         this.lastName = lastName;
         this.bithDate = bithDate;

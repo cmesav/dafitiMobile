@@ -4,6 +4,9 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class Register {
 
+    private Register() {
+    }
+
     public  static final Target EMAIL = Target.the("Email field")
             .locatedBy("//*[@resource-id='br.com.dafiti:id/form_email']");
 
@@ -16,8 +19,8 @@ public class Register {
     public  static final Target ID_TYPE_FIELD = Target.the("Id type field")
             .locatedBy("//*[@resource-id='br.com.dafiti:id/form_document_type']");
 
-    public  static final Target ID_TYPE = Target.the("Id type")
-            .locatedBy("//*[@text='CC']");
+    public  static final Target ID_TYPE = Target.the("Id type {0}")
+            .locatedBy("//*[@text='{0}']");
 
     public  static final Target ID_NUMBER = Target.the("Id number field")
             .locatedBy("//*[@resource-id='br.com.dafiti:id/form_identification']");
