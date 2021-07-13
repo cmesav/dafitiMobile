@@ -7,8 +7,8 @@ import com.dafiti.tasks.RegisterNew;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.screenplay.GivenWhenThen;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.*;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
 import static org.hamcrest.Matchers.*;
 
@@ -26,7 +26,7 @@ public class AddProductStepdefinitions {
 
     @Then("he can see the product {string} in his cart")
     public void heCanSeeTheProductInHisCart(String producto) {
-        theActorInTheSpotlight().should(GivenWhenThen.seeThat(TheProduct.is(), equalTo(producto)));
+        theActorInTheSpotlight().should(seeThat(TheProduct.is(), equalTo(producto)));
 
     }
 }

@@ -43,7 +43,6 @@ public class AddTo implements Task {
         actor.attemptsTo(
                 Click.on(ShopingCart.CART)
         );
-        System.out.println("prueba ");
     }
 
     public static AddTo cart(String product) {

@@ -4,6 +4,9 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class ShopingCart {
 
+    private ShopingCart() {
+    }
+
     public  static final Target CART = Target.the("Cart")
             .locatedBy("//*[@content-desc='Carrito']");
 

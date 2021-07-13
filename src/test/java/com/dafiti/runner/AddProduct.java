@@ -7,6 +7,6 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = "src/test/resources/features/add_product.feature",
         glue = {"com.dafiti.setup", "com.dafiti.stepdefinitions"},
-        snippets = CucumberOptions.SnippetType.CAMELCASE, tags = "")
+        snippets = CucumberOptions.SnippetType.CAMELCASE, tags = "@Add")
 public class AddProduct {
 }
